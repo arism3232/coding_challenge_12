@@ -9,3 +9,11 @@ revenueCard.innerHTML = `
 <p>$0</p>
 `;
 dashboardId.appendChild(revenueCard);
+
+// Task2- Updating Dashboard Metrivs- Working with Ndelists and Arrays.
+const metricCards = document.querySelectorAll(".metric-card");
+const metricCardsArray = [...metricCards];
+metricCardsArray.forEach(card => {
+    card.innertext += ' - Updated';
+    card.style.backgroundColor = 'orange';
+});
