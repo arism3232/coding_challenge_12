@@ -39,3 +39,16 @@ document.getElementById("addProductButton").addEventListener("click", () => {
 });
 addProductItem("Lamp")
 addProductItem("Light Bulb")
+
+// Task4- Business Customer Section- Handling Event Bubblinf
+const customerSection = document.getElementById("customerSection")
+customerSection.addEventListener("click", () => {
+    console.log("Selected as an option")
+});
+const customerCards = document.querySelectorAll(".customer-card");
+customerCards.forEach((card) => {
+    card.style.backgroundColor = "green"
+    card.addEventListener("click", (event) => {
+        console.log("Selected as an option")
+    });
+});
